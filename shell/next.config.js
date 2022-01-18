@@ -4,7 +4,6 @@ const nextConfig = {
   //reactStrictMode: true,
   async rewrites() {
     console.log('Local: ', LOCAL_URL)
-    console.log(await fetch(`${LOCAL_URL}/specialChild`))
     return [
       {
         source: '/:path*',
